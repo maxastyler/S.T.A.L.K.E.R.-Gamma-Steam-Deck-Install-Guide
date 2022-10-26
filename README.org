@@ -3,5 +3,17 @@ This guide will get you up and running with STALKER Gamma on a Steam Deck.
 The game runs pretty well - 60FPS most places, clear sky base down to ~40FPS. Totally playable.
 
 ** What You'll Need
+- A Steam Deck :^)
+- A computer with Windows on it and around 90GB of space (virtual machines on Linux work - I'll show how to do it with virtualbox in this guide)
+- Some way of transferring data to the Steam Deck.
+  Multiple options here: SD Card; Upload to google drive then download on deck; copy to your phone, then plug it into the deck and copy the files...
+- A few hours
+
+** Getting the GAMMA files
+1. Install Windows.
+   If you're using virtualbox, then get the windows 10 ISO [[https://www.microsoft.com/en-gb/software-download/windows10ISO][here]]
+   Install it into a virtual machine, and make sure you give it around 90GB of space
+2. Install the software you're gonna need.
+   - [[https://www.7-zip.org/][7-zip]]
 
 
