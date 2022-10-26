@@ -30,7 +30,11 @@ The game runs pretty well - 60FPS most places, clear sky base down to ~40FPS. To
 6. Run the gamma installer, following the discord's guide. This should download files properly.
 7. Compress the files into an archive.
    Use 7-zip, and add the anomaly and gamma folders to an archive.
-#+CAPTION: This is the caption for the next figure link (or table)
-#+NAME:   fig:SED-HR4049
-[[./images/compress_files.png]]
-   
+   #+CAPTION: This is the caption for the next figure link (or table)
+   #+NAME:   fig:SED-HR4049
+   [[./images/compress_files.png]]
+8. Get this archive from the virtual machine and onto your steam deck.
+   A few ways to do this:
+   - Enable shared folders on your VM, then copy it into the shared folder to get the archive on your host system
+   - Upload the archive to google drive/other cloud service, then download it on your deck
+ 
