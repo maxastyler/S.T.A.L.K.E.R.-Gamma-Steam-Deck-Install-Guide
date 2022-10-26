@@ -37,4 +37,7 @@ The game runs pretty well - 60FPS most places, clear sky base down to ~40FPS. To
    A few ways to do this:
    - Enable shared folders on your VM, then copy it into the shared folder to get the archive on your host system
    - Upload the archive to google drive/other cloud service, then download it on your deck
+   Whatever way you do it, get it onto your deck.
+9. Extract the files from the archive onto your deck. I extracted them to ~/Games.
+   You should end up with two folders in the folder you extract to: *anomaly* and *gamma*.
  
