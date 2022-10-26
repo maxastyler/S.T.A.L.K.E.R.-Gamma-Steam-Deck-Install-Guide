@@ -1,1 +1,0 @@
-# S.T.A.L.K.E.R.-Gamma-Steam-Deck-Install-Guide
