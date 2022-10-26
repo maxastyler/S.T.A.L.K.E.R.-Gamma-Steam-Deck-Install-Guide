@@ -1,1 +1,7 @@
-* S.T.A.L.K.E.R.-Gamma-Steam-Deck-Install-Guide
+* S.T.A.L.K.E.R. Gamma Steam Deck Install Guide
+This guide will get you up and running with STALKER Gamma on a Steam Deck.
+The game runs pretty well - 60FPS most places, clear sky base down to ~40FPS. Totally playable.
+
+** What You'll Need
+
+
