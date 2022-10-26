@@ -13,8 +13,13 @@ The game runs pretty well - 60FPS most places, clear sky base down to ~40FPS. To
 1. Install Windows.
    If you're using virtualbox, then get the windows 10 ISO [[https://www.microsoft.com/en-gb/software-download/windows10ISO][here]]
    Install it into a virtual machine, and make sure you give it around 90GB of space
-2. On the windows box, install the software you're gonna need.
+2. On the windows box, download and install the software you're gonna need.
    - [[https://www.7-zip.org/][7-zip]], for extracting and compressing stuff
    - The latest 64-bit (x64) [[https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170][vc_redist]] (The one under the heading *Visual Studio 2015, 2017, 2019, and 2022*)
-
-
+   - [[https://www.microsoft.com/en-gb/download/details.aspx?id=35][direct-x]], so you can run anomaly once to get the files all nice and right
+3. Download the Anomaly and GAMMA files.
+   - https://www.moddb.com/mods/stalker-anomaly Get the 1.5.1 and 1.5.1 to 1.5.2 update files.
+   - Get the GAMMA files from the [[https://discord.com/invite/stalker-gamma][discord]]
+4. Extract the files.
+   1. Create folders `C:\anomaly` and `C:\gamma`
+   2. Extract the anomaly 1.5.1 archive into C:\anomaly
