@@ -13,7 +13,8 @@ The game runs pretty well - 60FPS most places, clear sky base down to ~40FPS. To
 1. Install Windows.
    If you're using virtualbox, then get the windows 10 ISO [[https://www.microsoft.com/en-gb/software-download/windows10ISO][here]]
    Install it into a virtual machine, and make sure you give it around 90GB of space
-2. Install the software you're gonna need.
-   - [[https://www.7-zip.org/][7-zip]]
+2. On the windows box, install the software you're gonna need.
+   - [[https://www.7-zip.org/][7-zip]], for extracting and compressing stuff
+   - The latest 64-bit (x64) [[https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170][vc_redist]] (The one under the heading *Visual Studio 2015, 2017, 2019, and 2022*)
 
 
