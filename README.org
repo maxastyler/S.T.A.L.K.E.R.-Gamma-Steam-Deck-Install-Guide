@@ -2,7 +2,8 @@
 This guide will get you up and running with STALKER Gamma on a Steam Deck.
 The game runs pretty well - 60FPS most places, clear sky base down to ~40FPS. Totally playable.
 
-I run it with steam+proton in this guide - it gives me much better performance than through lutris+wine
+I run it with steam+proton in this guide - it gives me much better performance than through lutris+wine, where
+the CPU usage seems to limit performance.
 
 ** What You'll Need
 - A Steam Deck :^)
