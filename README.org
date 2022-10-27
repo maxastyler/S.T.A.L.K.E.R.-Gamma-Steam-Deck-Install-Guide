@@ -2,6 +2,8 @@
 This guide will get you up and running with STALKER Gamma on a Steam Deck.
 The game runs pretty well - 60FPS most places, clear sky base down to ~40FPS. Totally playable.
 
+I run it with steam+proton in this guide - it gives me much better performance than through lutris+wine
+
 ** What You'll Need
 - A Steam Deck :^)
 - A computer with Windows on it and around 90GB of space (virtual machines on Linux work - I'll show how to do it with virtualbox in this guide)
@@ -30,8 +32,6 @@ The game runs pretty well - 60FPS most places, clear sky base down to ~40FPS. To
 6. Run the gamma installer, following the discord's guide. This should download files properly.
 7. Compress the files into an archive.
    Use 7-zip, and add the anomaly and gamma folders to an archive.
-   #+CAPTION: This is the caption for the next figure link (or table)
-   #+NAME:   fig:SED-HR4049
    [[./images/compress_files.png]]
 8. Get this archive from the virtual machine and onto your steam deck.
    A few ways to do this:
@@ -40,4 +40,54 @@ The game runs pretty well - 60FPS most places, clear sky base down to ~40FPS. To
    Whatever way you do it, get it onto your deck.
 9. Extract the files from the archive onto your deck. I extracted them to ~/Games.
    You should end up with two folders in the folder you extract to: *anomaly* and *gamma*.
- 
+** Run GAMMA through proton
+1. Add the mod organiser executable to steam
+   Open up steam on the desktop, and add a non steam game.
+   [[./images/Screenshot_20221026_105716.png]]
+   Click on the browser option, and browse to your gamma folder.
+   Change the file-type filter to "All Files", and then select ModOrganizer.exe
+2. Set the mod organiser executable to run with proton.
+   You should now have a bit in your library for mod organiser (I've renamed my shortcut to "S.T.A.L.K.E.R. GAMMA").
+   Right click on it, and open the properties window.
+   [[./images/Screenshot_20221026_110038.png]]
+   Click the properties tab and tick the option "Force the use of a specific Steam Play compatability tool"
+   [[./images/Screenshot_20221026_110056.png]]
+   Steam will now run mod organiser with proton, but before we can run gamma, we need to add some dlls to the proton prefix.
+3. Install protontricks through the discover application. This lets your modify the proton prefix.
+4. Open up protontricks and select Mod Organiser's shortcut to modify its prefix (remember I renamed mine to stalker gamma).
+   [[./images/Screenshot_20221026_111103.png]]
+   Choose menu options:
+   - Select the default wineprefix
+   - Install a Windows DLL or component
+   - Select
+     - d3dcompiler_43
+     - d3dcompiler_47
+     - d3dx10
+     - d3dx11_43
+     - d3dx9
+     - d3dx9_43
+     Then press "ok"
+   You can then close the protontricks windows
+5. Run your shortcut to mod organiser from steam. You should get an error since the path to anomaly will have changed.
+   You need to direct mod organiser to the anomaly folder. The Z: drive contains your linux filesystem, so you should find it there.
+6. Edit the link to the anomaly launcher executable. Direct the Binary option to the executable binary and set the start in option to
+   the folder that the executable is in.
+   [[./images/Screenshot_20221027_123039.png]]
+   
+   [[./images/Screenshot_20221027_123055.png]]
+7. Try launching it. You should be able to start the game and load into the world, but you'll have issues with the shaders.
+   If not - you've done something wrong, follow the guide again :^)
+8. Remove reshade. Following the tips [[https://reshade.me/forum/general-discussion/4398-howto-uninstall-reshade][here]], open up the anomaly/bin folder and delete any of the dlls mentioned in that forum post
+   and the reshade-shaders folder.
+9. Disable shader mods.
+   Following the steps for disabling shaders on the discord:
+   Disable 
+     - Screen Space Shaders - Ascii1457
+     - Shaders Cumulative Pack for GAMMA
+
+   Right click Beef's NVG addon, click "reinstall mod" and tick the following options: 
+     Beef's NVG 
+     Beef’s NVG - Patch ES
+   Delete anomaly/appdata/shaders_cache folder
+10. Launch the game. If you've followed all the instructions correctly, you should be able to play GAMMA.
+
