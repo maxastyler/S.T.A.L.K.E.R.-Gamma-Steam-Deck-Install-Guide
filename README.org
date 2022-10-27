@@ -86,8 +86,8 @@ I run it with steam+proton in this guide - it gives me much better performance t
      - Shaders Cumulative Pack for GAMMA
 
    Right click Beef's NVG addon, click "reinstall mod" and tick the following options: 
-     Beef's NVG 
-     Beef’s NVG - Patch ES
+     - Beef's NVG 
+     - Beef’s NVG - Patch ES
    Delete anomaly/appdata/shaders_cache folder
 10. Launch the game. If you've followed all the instructions correctly, you should be able to play GAMMA.
 
